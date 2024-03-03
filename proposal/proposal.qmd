@@ -59,53 +59,51 @@ The following is our data, inclusive of the site it was sourced from and its con
 
 # Methodology
 
-1.  Data Preparation
+1.  **Data Preparation**
 
--   Sourcing geospatial and attribute data from reliable data platforms
+    -   Sourcing geospatial and attribute data from reliable data platforms
 
--   Importing data into R
+    -   Importing data into R
 
--   Data wrangling using R packages: 
+    -   Data wrangling using R packages: 
 
-    -   To clean and validate data
+        -   To clean and validate data
 
-    -   To extract relevant study areas and attributes
+        -   To extract relevant study areas and attributes
 
--   R packages used: (to add more if necessary; maybe don’t include in proposal first)
+    -   R packages used: (to add more if necessary; maybe don’t include in proposal first)
 
-    -   tidyr
+        -   tidyr
 
-    -   tmap
+        -   tmap
 
-    -   sf
+        -   sf
 
-    -   sfdep 
+        -   sfdep 
 
-2.  Exploratory Data Analysis
+2.  **Exploratory Data Analysis**
 
--   Visualize and examine the distribution of attribute data
+    -   Visualize and examine the distribution of attribute data
 
--   Discover potential anomalies, outliers, or trends
+    -   Discover potential anomalies, outliers, or trends
 
--   Come up with hypotheses to narrow our focus in further data analyses
+    -   Come up with hypotheses to narrow our focus in further data analyses
 
-3.  Spatial Points Pattern Analysis to Discover the Distribution of Senior Citizens in Singapore
+3.  **Analytical Regionalisation and Geographical Segmentation**
 
--   Global Measures of Spatial Autocorrelation
+    -   Employ concepts of geographic segmentation
 
-1.  To analyze how attributes of geographically referenced data differs as a whole
+    -   Apply conventional cluster analysis techniques
 
--    Local Measures of Spatial Autocorrelation
+    -   Delineate homogeneous region by using geographically referenced multivariate data
 
-    -   To analyze location related tendency (clusters or outliers) in the attributes of geographically referenced data (points or area), and detect hot and cold spot areas
+4.  **ShinyApp**
 
-4\. ShinyApp
+    -   Allow users to use the interactive ShinyApp intuitively and easily
 
--   Allow users to use the interactive ShinyApp intuitively and easily
+    -   Explanation of methods to allow users to understand the concept of each methods
 
--   Explanation of methods to allow users to understand the concept of each methods
-
--   Clear instructions to guide the interpretation of analysis results and formulation of conclusions
+    -   Clear instructions to guide the interpretation of analysis results and formulation of conclusions
 
 # Timeline
 
