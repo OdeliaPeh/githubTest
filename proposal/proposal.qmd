@@ -35,75 +35,186 @@ For this project, we would like to achieve the following objectives:
 
 The following is our data, inclusive of the site it was sourced from and its content.
 
-+------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| Data set (link)                                                                                                              | Content                                                                                                                                          |
-+==============================================================================================================================+==================================================================================================================================================+
-| [Singapore Residents by Planning Area, Age Group and Sex, Jun 2018 (Gender)](https://beta.data.gov.sg/collections/2060/view) | -   Source: Department of Statistics, Singapore                                                                                                  |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Content: Geospatial and attribute data containing the number of Singapore residents in each planning area, by age groups of 5 years, in 2018 |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
-+------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| [Eldercare Services](https://beta.data.gov.sg/collections/714/datasets/d_3545b068e3f3506c56b2cb6b6117b884/view)              | -   Source: Ministry of Health, Singapore                                                                                                        |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Content: Geospatial and attribute data containing the records of eldercare services in Singapore as of February 29, 2024                     |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Type: Point Data                                                                                                                             |
-+------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| [Pois Data Set from Geofabrik](https://download.geofabrik.de/)                                                               | -   Source: OpenStreetMap of Geofabrik server                                                                                                    |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Content: Facilties in Malaysia, Singapore and Brunei (e.g. parks, community centres, hospital)                                               |
-|                                                                                                                              |                                                                                                                                                  |
-|                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
-+------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Data set (link)                                                                                                                                                                    | Content                                                                                                                                          |
++====================================================================================================================================================================================+==================================================================================================================================================+
+| [Singapore Residents by Planning Area, Age Group and Sex, Jun 2023 (Gender)](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data) | -   Source: Department of Statistics, Singapore                                                                                                  |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Content: Geospatial and attribute data containing the number of Singapore residents in each planning area, by age groups of 5 years, in 2018 |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Type: Polygon Data                                                                                                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Eldercare Services](https://beta.data.gov.sg/collections/714/datasets/d_3545b068e3f3506c56b2cb6b6117b884/view)                                                                    | -   Source: Ministry of Health, Singapore                                                                                                        |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Content: Geospatial and attribute data containing the records of eldercare services in Singapore as of February 29, 2024                     |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Type: Point Data                                                                                                                             |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Pois Data Set from Geofabrik](https://download.geofabrik.de/)                                                                                                                     | -   Source: OpenStreetMap of Geofabrik server                                                                                                    |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Content: Facilties in Malaysia, Singapore and Brunei (e.g. parks, community centres, hospital)                                               |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Type: Polygon Data                                                                                                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Community in Bloom](https://beta.data.gov.sg/collections/1479/view) (CIB)                                                                                                         | -   Source: National Parks Board, Singapore                                                                                                      |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Content: Community gardens in Singapore                                                                                                      |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Type: Point Data                                                                                                                             |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [**Residents By Age Group & Type Of Dwelling**](https://www.singstat.gov.sg/find-data/search-by-theme/population/population-and-population-structure/latest-data)                  | -   Source: Singstat                                                                                                                             |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Content: age groups according to type of housing they are in                                                                                 |
+|                                                                                                                                                                                    |                                                                                                                                                  |
+|                                                                                                                                                                                    | -   Type: Aspatial data                                                                                                                          |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+# Main features
+
+Feature 1: Exploratory Data Analysis
+
+1.  Usage:
+
+-   Visualize and examine the distribution of attribute data
+
+-   Visualize the trend of attribute data 
+
+-   Discover potential anomalies, outliers, or trends
+
+2.  Selections that users can make
+
+    1.  Age range
+
+    2.  Types of facilities
+
+    3.  Planning area/subzone
+
+Feature 2: Kernel Density Estimation
+
+-   Usage: Visualize and examine the distribution of attribute data (facilities and amenities) across Singapore
+
+-   Selections that users can make:
+
+    -   Type of facilities/amenities: 
+
+        -   Examples: Hospitals, Senior Activity Centres, Parks
+
+    -   Planning subzone
+
+        -   Examples: Bedok, Tampines
+
+    -   KDE parameter (Bandwith)
+
+        -   Examples: automatic, fixed, adaptive
+
+    -   KDE Parameter (Kernel Method)
+
+        -   Examples: gaussian,  epanechnikov, quartic, disc,
+
+Feature 3: Analytical Regionalisation and Geographical Segmentation
+
+-   Usage: Visualize the geographical / delineate homogeneous region by using geographically referenced multivariate data
+
+```{=html}
+<!-- -->
+```
+-   Employ concepts of geographic segmentation
+
+-   Apply conventional cluster analysis techniques
+
+-   Delineate homogeneous region by using geographically referenced multivariate data
+
+-   Parameters:
+
+    -   Standardization (min-max, z-score) → hierarchy cluster
+
+    -   Approaches (SKATER, ClusGeo) → spatially constrained cluster extra split?
+
+        -   ClusGeo: Number of clusters (k value)
+
+        -   SKATER: 
+
+    -   
+
+Feature 4: Integrated analysis/summary (check with prof first)
+
+-   Combining KDE and analytical regionalisation
+
+-   Visualize and examine whether clusters of facilities coincide with regions containing a high density of elderly
 
 # Methodology
 
-1.  **Data Preparation**
+1.  Data Preparation
 
-    -   Sourcing geospatial and attribute data from reliable data platforms
+-   Sourcing geospatial and attribute data from reliable data platforms
 
-    -   Importing data into R
+-   Importing data into R
 
-    -   Data wrangling using R packages: 
+-   Data wrangling using R packages: 
 
-        -   To clean and validate data
+    -   To clean and validate data
 
-        -   To extract relevant study areas and attributes
+    -   To extract relevant study areas and attributes
 
-    -   R packages used: (to add more if necessary; maybe don’t include in proposal first)
+-   R packages used: (to add more if necessary; maybe don’t include in proposal first)
 
-        -   tidyr
+    -   tidyr
 
-        -   tmap
+    -   tmap
 
-        -   sf
+    -   sf
 
-        -   sfdep 
+    -   sfdep 
 
-2.  **Exploratory Data Analysis**
+    -   tidyverse
 
-    -   Visualize and examine the distribution of attribute data
+2\. Building of Main Features
 
-    -   Discover potential anomalies, outliers, or trends
+-   Exploratory Data Analysis
 
-    -   Come up with hypotheses to narrow our focus in further data analyses
+```{=html}
+<!-- -->
+```
+-   Visualize and examine the distribution of attribute data
 
-3.  **Analytical Regionalisation and Geographical Segmentation**
+-   Discover potential anomalies, outliers, or trends
 
-    -   Employ concepts of geographic segmentation
+-   Come up with hypotheses to narrow our focus in further data analyses
 
-    -   Apply conventional cluster analysis techniques
+```{=html}
+<!-- -->
+```
+-   Kernel Density Estimation
 
-    -   Delineate homogeneous region by using geographically referenced multivariate data
+    -   Visualize and examine the distribution of attribute data (facilities and amenities) across Singapore
 
-4.  **ShinyApp**
+-   Analytical Regionalisation and Geographical Segmentation
 
-    -   Allow users to use the interactive ShinyApp intuitively and easily
+```{=html}
+<!-- -->
+```
+-   Employ concepts of geographic segmentation
 
-    -   Explanation of methods to allow users to understand the concept of each methods
+-   Apply conventional cluster analysis techniques
 
-    -   Clear instructions to guide the interpretation of analysis results and formulation of conclusions
+-   Delineate homogeneous region by using geographically referenced multivariate data
+
+```{=html}
+<!-- -->
+```
+-   Integrated analysis/summary
+
+    -   Combining KDE and analytical regionalisation
+
+    -   Visualize and examine whether clusters of facilities coincide with regions containing a high density of elderly
+
+3\. Building ShinyApp
+
+-   Allow users to use the interactive ShinyApp intuitively and easily
+
+-   Explanation of methods to allow users to understand the concept of each methods
+
+-   Clear instructions to guide the interpretation of analysis results and formulation of conclusions
 
 # Timeline
 

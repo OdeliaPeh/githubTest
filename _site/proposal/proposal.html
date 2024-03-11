@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-03-03">
+<meta name="dcterms.date" content="2024-03-11">
 
 <title>IS415 Project - Project Proposal</title>
 <style>
@@ -105,6 +105,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#project-motivation" id="toc-project-motivation" class="nav-link" data-scroll-target="#project-motivation">Project Motivation</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#main-features" id="toc-main-features" class="nav-link" data-scroll-target="#main-features">Main features</a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
   <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
   </ul>
@@ -126,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 3, 2024</p>
+      <p class="date">March 11, 2024</p>
     </div>
   </div>
     
@@ -169,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://beta.data.gov.sg/collections/2060/view">Singapore Residents by Planning Area, Age Group and Sex, Jun 2018 (Gender)</a></td>
+<td><a href="https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data">Singapore Residents by Planning Area, Age Group and Sex, Jun 2023 (Gender)</a></td>
 <td><ul>
 <li><p>Source: Department of Statistics, Singapore</p></li>
 <li><p>Content: Geospatial and attribute data containing the number of Singapore residents in each planning area, by age groups of 5 years, in 2018</p></li>
@@ -192,13 +193,98 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Type: Polygon Data</p></li>
 </ul></td>
 </tr>
+<tr class="even">
+<td><a href="https://beta.data.gov.sg/collections/1479/view">Community in Bloom</a> (CIB)</td>
+<td><ul>
+<li><p>Source: National Parks Board, Singapore</p></li>
+<li><p>Content: Community gardens in Singapore</p></li>
+<li><p>Type: Point Data</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.singstat.gov.sg/find-data/search-by-theme/population/population-and-population-structure/latest-data"><strong>Residents By Age Group &amp; Type Of Dwelling</strong></a></td>
+<td><ul>
+<li><p>Source: Singstat</p></li>
+<li><p>Content: age groups according to type of housing they are in</p></li>
+<li><p>Type: Aspatial data</p></li>
+</ul></td>
+</tr>
 </tbody>
 </table>
+</section>
+<section id="main-features" class="level1">
+<h1>Main features</h1>
+<p>Feature 1: Exploratory Data Analysis</p>
+<ol type="1">
+<li>Usage:</li>
+</ol>
+<ul>
+<li><p>Visualize and examine the distribution of attribute data</p></li>
+<li><p>Visualize the trend of attribute data&nbsp;</p></li>
+<li><p>Discover potential anomalies, outliers, or trends</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Selections that users can make</p>
+<ol type="1">
+<li><p>Age range</p></li>
+<li><p>Types of facilities</p></li>
+<li><p>Planning area/subzone</p></li>
+</ol></li>
+</ol>
+<p>Feature 2: Kernel Density Estimation</p>
+<ul>
+<li><p>Usage: Visualize and examine the distribution of attribute data (facilities and amenities) across Singapore</p></li>
+<li><p>Selections that users can make:</p>
+<ul>
+<li><p>Type of facilities/amenities:&nbsp;</p>
+<ul>
+<li>Examples: Hospitals, Senior Activity Centres, Parks</li>
+</ul></li>
+<li><p>Planning subzone</p>
+<ul>
+<li>Examples: Bedok, Tampines</li>
+</ul></li>
+<li><p>KDE parameter (Bandwith)</p>
+<ul>
+<li>Examples: automatic, fixed, adaptive</li>
+</ul></li>
+<li><p>KDE Parameter (Kernel Method)</p>
+<ul>
+<li>Examples: gaussian,&nbsp; epanechnikov, quartic, disc,</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Feature 3: Analytical Regionalisation and Geographical Segmentation</p>
+<ul>
+<li>Usage: Visualize the geographical / delineate homogeneous region by using geographically referenced multivariate data</li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Employ concepts of geographic segmentation</p></li>
+<li><p>Apply conventional cluster analysis techniques</p></li>
+<li><p>Delineate homogeneous region by using geographically referenced multivariate data</p></li>
+<li><p>Parameters:</p>
+<ul>
+<li><p>Standardization (min-max, z-score) → hierarchy cluster</p></li>
+<li><p>Approaches (SKATER, ClusGeo) → spatially constrained cluster extra split?</p>
+<ul>
+<li><p>ClusGeo: Number of clusters (k value)</p></li>
+<li><p>SKATER:&nbsp;</p></li>
+</ul></li>
+<li></li>
+</ul></li>
+</ul>
+<p>Feature 4: Integrated analysis/summary (check with prof first)</p>
+<ul>
+<li><p>Combining KDE and analytical regionalisation</p></li>
+<li><p>Visualize and examine whether clusters of facilities coincide with regions containing a high density of elderly</p></li>
+</ul>
 </section>
 <section id="methodology" class="level1">
 <h1>Methodology</h1>
 <ol type="1">
-<li><p><strong>Data Preparation</strong></p>
+<li>Data Preparation</li>
+</ol>
 <ul>
 <li><p>Sourcing geospatial and attribute data from reliable data platforms</p></li>
 <li><p>Importing data into R</p></li>
@@ -213,27 +299,47 @@ ul.task-list li input[type="checkbox"] {
 <li><p>tmap</p></li>
 <li><p>sf</p></li>
 <li><p>sfdep&nbsp;</p></li>
+<li><p>tidyverse</p></li>
 </ul></li>
-</ul></li>
-<li><p><strong>Exploratory Data Analysis</strong></p>
+</ul>
+<p>2. Building of Main Features</p>
+<ul>
+<li>Exploratory Data Analysis</li>
+</ul>
+<!-- -->
 <ul>
 <li><p>Visualize and examine the distribution of attribute data</p></li>
 <li><p>Discover potential anomalies, outliers, or trends</p></li>
 <li><p>Come up with hypotheses to narrow our focus in further data analyses</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Kernel Density Estimation</p>
+<ul>
+<li>Visualize and examine the distribution of attribute data (facilities and amenities) across Singapore</li>
 </ul></li>
-<li><p><strong>Analytical Regionalisation and Geographical Segmentation</strong></p>
+<li><p>Analytical Regionalisation and Geographical Segmentation</p></li>
+</ul>
+<!-- -->
 <ul>
 <li><p>Employ concepts of geographic segmentation</p></li>
 <li><p>Apply conventional cluster analysis techniques</p></li>
 <li><p>Delineate homogeneous region by using geographically referenced multivariate data</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Integrated analysis/summary</p>
+<ul>
+<li><p>Combining KDE and analytical regionalisation</p></li>
+<li><p>Visualize and examine whether clusters of facilities coincide with regions containing a high density of elderly</p></li>
 </ul></li>
-<li><p><strong>ShinyApp</strong></p>
+</ul>
+<p>3. Building ShinyApp</p>
 <ul>
 <li><p>Allow users to use the interactive ShinyApp intuitively and easily</p></li>
 <li><p>Explanation of methods to allow users to understand the concept of each methods</p></li>
 <li><p>Clear instructions to guide the interpretation of analysis results and formulation of conclusions</p></li>
-</ul></li>
-</ol>
+</ul>
 </section>
 <section id="timeline" class="level1">
 <h1>Timeline</h1>
