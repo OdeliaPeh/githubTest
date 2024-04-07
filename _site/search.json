@@ -18,7 +18,9 @@
     "href": "index.html",
     "title": "ELDANALYZE: Simple Geospatial Analysis Using Shiny",
     "section": "",
+ 
     "text": "Introduction\nHello, we are Bin Hui, Kristen and Odelia from SMU’s IS415 - Geospatial Analytics and Applications Team 4.\n\n\nOur Project\nWith the ageing population in Singapore, urban planning has to pay more attention to address the arising needs by it.\nIn our project, ELDANALYZE, we hope to help understand what the current distribution of elderly-related facilities is across Singapore. Additionally, we want to help produce insights on how accessible these facilities are, and how they are segmented. These features willb. be executed through our ShinyApp.\nFeel free to head over to our Project Overview webpage (as seen in the tab above) to get a deeper understanding of our project.\nIf you want to try out the ShinyApp, tap on the ShinyApp tab!\nThank you and we hope you enjoy our work."
+
   },
   {
     "objectID": "about.html",
