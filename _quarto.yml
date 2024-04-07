@@ -2,13 +2,18 @@ project:
   type: website
 
 website:
-  title: "IS415 Project"
+  title: "ELDANALYZE"
   navbar:
     left:
-      - href: index.qmd
-        text: Introduction
-      - href: "proposal/proposal.html"
-        text: "Project Proposal"
+      - href: "ProjectOverview/ProjectOverview.html"
+        text: "Project Overview"
+      - href: "ShinyApp/UserGuide.html"
+        text: "User Guide"
+    right:
+      - href: "ShinyApp/UserGuide.html"
+        text: "ShinyApp"
+      
+     
 
 format:
   html:
