@@ -1,0 +1,80 @@
+---
+title: "Project Overview"
+execute:
+  warning: false
+date: "7 Apr, 2024"
+---
+
+# 1 Spatial Points Pattern Analysis (KDE)
+
+This tab allows for the user to see the kernel density estimation of the various amenities throughout Singapore, both nationally and per planning zone.
+
+![](images/shinykde.png){fig-align="center"}
+
+On the left, there is the sidebar to navigate through the different available options.
+
+**Steps:**
+
+1.  Select which level you want to view. (Country-wide or Planning Area-specific)
+
+    1.  If Planning Area-specific is selected, select the planning area name
+
+2.  Select the amenity of interest
+
+3.  Select which kernel type you want to view
+
+A new map will be generated for each selection made.
+
+**Interpretation:** 
+
+-   **Nation-wide accessibility**
+
+    -   In general, the amenities were fairly evenly distributed throughout Singapore
+
+    -   However, hospitals are mostly clustered around the Central area and Punggol.
+
+-   **Planning Area-Specific**
+
+    -   For the planning area-specific analysis, there were some areas that had 0 of some amenities. This could be addressed as the elderly would have to travel a substantial distance in order to have access to certain amenities.
+
+# 2 Accessibility Analysis
+
+The Accessibility Analysis tab allows users to observe the accessibility index across different areas in Singapore as a whole.
+
+![](images/shinyacc.png){fig-align="center"}
+
+**Steps:**
+
+1.  Select the Type of Facility you want the visualization to produce.
+
+2.  Select the Accessibility Analysis Method, which would produce the type of accessibility index you would like the visualization to reflect.
+
+3.  Select the Maximum Distance to be travelled (from the place of residence to the facility).
+
+4.  Select the Classification Method the visualization will use to group the accessibility indexes.
+
+**Interpretation:**
+
+In general, higher accessibility index values reflect better accessibility, while lower values suggest poorer accessibility.
+
+-   Higher Values:
+
+    -   Many opportunities (e.g., jobs, services) reachable within the specified distance or time from the origin.
+
+    -   Suggest that the area is well-connected and easily accessible, with ample resources or services available within a reasonable travel distance or time.
+
+```{=html}
+<!-- -->
+```
+-   Lower Values:
+
+    -   Fewer opportunities reachable within the specified distance or time from the origin.
+
+    -   Area is more remote or poorly connected, with limited access to the facilities within the given travel constraints.
+
+```{=html}
+<!-- -->
+```
+-   Spatial Patterns:
+
+    -   Clusters of high or low accessibility index values may highlight areas of particular concern or areas where interventions are needed to improve access.

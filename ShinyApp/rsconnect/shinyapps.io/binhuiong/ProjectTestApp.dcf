@@ -1,0 +1,12 @@
+name: ProjectTestApp
+title: ProjectTestApp
+username: binhuiong
+account: binhuiong
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11664700
+bundleId: 8453447
+url: https://binhuiong.shinyapps.io/ProjectTestApp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

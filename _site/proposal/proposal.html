@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-03-11">
 
-<title>IS415 Project - Project Proposal</title>
+<title>ELDANALYZE - Project Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -56,7 +55,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -72,22 +72,32 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">IS415 Project</span>
+    <span class="navbar-title">ELDANALYZE</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Introduction</a>
+    <a class="nav-link" href="../ProjectOverview/ProjectOverview.html" rel="" target="">
+ <span class="menu-text">Project Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../proposal/proposal.html" aria-current="page">Project Proposal</a>
+    <a class="nav-link" href="../ShinyApp/UserGuide.html" rel="" target="">
+ <span class="menu-text">User Guide</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../ShinyApp/UserGuide.html" rel="" target="">
+ <span class="menu-text">ShinyApp</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -101,10 +111,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-theme" id="toc-project-theme" class="nav-link active" data-scroll-target="#project-theme">Project Theme</a></li>
-  <li><a href="#project-motivation" id="toc-project-motivation" class="nav-link" data-scroll-target="#project-motivation">Project Motivation</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#the-issue-singapores-ageing-population" id="toc-the-issue-singapores-ageing-population" class="nav-link active" data-scroll-target="#the-issue-singapores-ageing-population">1 The Issue: Singapore’s Ageing Population</a></li>
+  <li><a href="#our-motivation" id="toc-our-motivation" class="nav-link" data-scroll-target="#our-motivation">2 Our Motivation</a></li>
+  <li><a href="#approaches" id="toc-approaches" class="nav-link" data-scroll-target="#approaches">3 Approaches</a></li>
   <li><a href="#main-features" id="toc-main-features" class="nav-link" data-scroll-target="#main-features">Main features</a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
   <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
@@ -116,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Proposal</h1>
+<h1 class="title">Project Overview</h1>
 </div>
 
 
@@ -127,39 +136,41 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 11, 2024</p>
+      <p class="date">Invalid Date</p>
     </div>
   </div>
+  
     
   </div>
   
 
 </header>
 
-<section id="project-theme" class="level1">
-<h1>Project Theme</h1>
-<p>Analytical Regionalisation and Geographical Segmentation (tentative)</p>
+<section id="the-issue-singapores-ageing-population" class="level1">
+<h1>1 The Issue: Singapore’s Ageing Population</h1>
+<p>Ageing Population:</p>
+<p>Singapore’s population of 65 and older has been by 11.7% over the past decade. This trend is expected to persist with longer lifespans and a large proportion of the population falling within the age range.</p>
+<p>Governmental Action:</p>
+<p>To address this, the government is building more polyclinics and eldercare centres, diversifying their capabilities, and removing physical barriers to entry. It is also pushing for active ageing, encouraging elderly individuals to engage in social and physical activities to maintain a healthy lifestyle and mindset.</p>
+<p>Our Aim:</p>
+<p>Through our project, we hope to provide insights about the geographical distribution, accessibility and segmentation of eldercare centres in Singapore. With better understanding of the connection between Singapore’s elderly and the existing relevant facilities, the authorities could potentially be better informed when planning and making decisions for the urban landscape, rolling out plans that better support the elderly in Singapore.</p>
 </section>
-<section id="project-motivation" class="level1">
-<h1>Project Motivation</h1>
+<section id="our-motivation" class="level1">
+<h1>2 Our Motivation</h1>
 <p>Singapore has experienced a demographic shift, with the proportion of the citizens aged 65 and older increasing by 11.7% from 10 years ago. (<a href="https://www.cnbc.com/2023/10/30/as-singapores-aging-population-grows-businesses-court-older-spenders.html">Source</a>) Such a shift comes with a higher prevalence of chronic illness and disabilities. To address this, the Singaporean government has committed to building more polyclinics (<a href="https://www.pap.org.sg/news/ensuring-quality-healthcare-remains-accessible-and-affordable/">Source</a>) and eldercare centres (<a href="https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086">Source</a>). Furthermore, they intend to diversify eldercare centres’ capabilities to also encompass basic health check-ups (<a href="https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086">Source</a>) and they are working towards removing physical barriers to entry in current polyclinics. These measures are to ensure that healthcare remains physically accessible to any elderly person who needs it. This is especially important since geographical accessibility has been identified as one of the biggest contributing factors to polyclinic visitations (<a href="http://www.smj.org.sg/sites/default/files/5302/5302a7.pdf">Source</a>).</p>
 <p>Furthermore, the government has been pushing for active ageing, where the elderly persons still engage in social and physical activity to maintain their health and well-being (<a href="https://www.healthhub.sg/live-healthy/embracing-the-golden-age">Source</a>). To this end, the Singaporean government has been trying to increase the number of active ageing centres (<a href="https://www.straitstimes.com/singapore/politics/ndr-2023-active-ageing-centres-to-be-expanded-to-help-seniors-stay-active-and-healthy">Source</a>) to make it more accessible to seniors.</p>
 <p>As such, our project aims to gain a deeper understanding of the geographical distribution of eldercare centres throughout Singapore. Currently, there have been studies conducted to understand the geographical accessibility of the polyclinics, as well as identify any potentially underserved regions. One study conducted in 2012 suggested that Sembawang and Jurong West were two underserved regions. (<a href="https://search.library.smu.edu.sg/permalink/65SMU_INST/1ba19kd/cdi_openaire_primary_doi_dedup_0a81367451c0764f9c94de2416016ce7">Source</a>). With the rising elderly population, we must ensure that there are sufficient facilities to meet the growing demand in each region. A more recent study conducted in 2018 suggests that eldercare specifically is sparse in the Central Region. (<a href="https://scholarbank.nus.edu.sg/handle/10635/223231">Source</a>)&nbsp;</p>
 <p>Our exact objectives will be discussed in the following section.</p>
+<p>Currently, there are studies to understand the geographical accessibility of the polyclinics, and identify any potentially underserved regions. Nonetheless, applications that help users derive a quick and comprehensive analysis of these facilities are not widely available.</p>
+<p>With the rising elderly population, we must ensure that there are sufficient facilities to meet the growing demand in each region. A more recent study conducted in 2018 suggests that eldercare is sparse in the Central Region. We hope our app would be helpful towards planning to better support our beloved older generations.</p>
 </section>
-<section id="objectives" class="level1">
-<h1>Objectives</h1>
+<section id="approaches" class="level1">
+<h1>3 Approaches</h1>
 <p>For this project, we would like to achieve the following objectives:</p>
-<ul>
-<li><p>To visualise hot and cold spots for our selected age demographics (elderly aged 65-100)</p></li>
-<li><p>To plot the locations of various eldercare amenities and facilities across Singapore</p>
-<ul>
-<li>To visualise whether these amenities are distributed evenly across Singapore</li>
-</ul></li>
-</ul>
-</section>
-<section id="data" class="level1">
-<h1>Data</h1>
+<p>Kernel Density Estimation To estimate the probability density function of a continuous random variable over a geographic area by placing a kernel function on each data point and summing up their contributions. This helps us visualizing spatial patterns of data points.</p>
+<p>Approach 2: Accessibility Analysis To assess the ease of reaching destinations from a given location, often using measures like travel time or distance, aiding urban planning and decision-making by identifying areas with varying levels of accessibility.</p>
+<p>Approach 3: Geographical Segmentation To divide our elderly population based on physical location, such as region, planning area, or subzone, allowing the government to tailor strategies to specific geographic areas.</p>
+<p>#4 The Data</p>
 <p>The following is our data, inclusive of the site it was sourced from and its content.</p>
 <table class="table">
 <thead>
@@ -376,9 +387,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -390,7 +415,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -426,24 +468,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

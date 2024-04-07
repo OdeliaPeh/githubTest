@@ -1,17 +1,25 @@
 ---
-title: "Project Proposal"
-
+title: "Project Overview"
 execute:
   warning: false
-  
 date: "`r Sys.Date()`"
 ---
 
-# Project Theme
+# 1 The Issue: Singapore's Ageing Population
 
-Analytical Regionalisation and Geographical Segmentation (tentative)
+Ageing Population:
 
-# Project Motivation
+Singapore's population of 65 and older has been by 11.7% over the past decade. This trend is expected to persist with longer lifespans and a large proportion of the population falling within the age range.
+
+Governmental Action:
+
+To address this, the government is building more polyclinics and eldercare centres, diversifying their capabilities, and removing physical barriers to entry. It is also pushing for active ageing, encouraging elderly individuals to engage in social and physical activities to maintain a healthy lifestyle and mindset.
+
+Our Aim:
+
+Through our project, we hope to provide insights about the geographical distribution, accessibility and segmentation of eldercare centres in Singapore. With better understanding of the connection between Singapore's elderly and the existing relevant facilities, the authorities could potentially be better informed when planning and making decisions for the urban landscape, rolling out plans that better support the elderly in Singapore.
+
+# 2 Our Motivation
 
 Singapore has experienced a demographic shift, with the proportion of the citizens aged 65 and older increasing by 11.7% from 10 years ago. ([Source](https://www.cnbc.com/2023/10/30/as-singapores-aging-population-grows-businesses-court-older-spenders.html)) Such a shift comes with a higher prevalence of chronic illness and disabilities. To address this, the Singaporean government has committed to building more polyclinics ([Source](https://www.pap.org.sg/news/ensuring-quality-healthcare-remains-accessible-and-affordable/)) and eldercare centres ([Source](https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086)). Furthermore, they intend to diversify eldercare centres’ capabilities to also encompass basic health check-ups ([Source](https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086)) and they are working towards removing physical barriers to entry in current polyclinics. These measures are to ensure that healthcare remains physically accessible to any elderly person who needs it. This is especially important since geographical accessibility has been identified as one of the biggest contributing factors to polyclinic visitations ([Source](http://www.smj.org.sg/sites/default/files/5302/5302a7.pdf)).
 
@@ -21,17 +29,21 @@ As such, our project aims to gain a deeper understanding of the geographical dis
 
 Our exact objectives will be discussed in the following section.
 
-# Objectives
+Currently, there are studies to understand the geographical accessibility of the polyclinics, and identify any potentially underserved regions. Nonetheless, applications that help users derive a quick and comprehensive analysis of these facilities are not widely available.
+
+With the rising elderly population, we must ensure that there are sufficient facilities to meet the growing demand in each region. A more recent study conducted in 2018 suggests that eldercare is sparse in the Central Region. We hope our app would be helpful towards planning to better support our beloved older generations.
+
+# 3 Approaches
 
 For this project, we would like to achieve the following objectives:
 
--   To visualise hot and cold spots for our selected age demographics (elderly aged 65-100)
+Kernel Density Estimation To estimate the probability density function of a continuous random variable over a geographic area by placing a kernel function on each data point and summing up their contributions. This helps us visualizing spatial patterns of data points.
 
--   To plot the locations of various eldercare amenities and facilities across Singapore
+Approach 2: Accessibility Analysis To assess the ease of reaching destinations from a given location, often using measures like travel time or distance, aiding urban planning and decision-making by identifying areas with varying levels of accessibility.
 
-    -   To visualise whether these amenities are distributed evenly across Singapore
+Approach 3: Geographical Segmentation To divide our elderly population based on physical location, such as region, planning area, or subzone, allowing the government to tailor strategies to specific geographic areas.
 
-# Data
+#4 The Data
 
 The following is our data, inclusive of the site it was sourced from and its content.
 
@@ -115,9 +127,8 @@ Feature 3: Analytical Regionalisation and Geographical Segmentation
 
 -   Usage: Visualize the geographical / delineate homogeneous region by using geographically referenced multivariate data
 
-```{=html}
 <!-- -->
-```
+
 -   Employ concepts of geographic segmentation
 
 -   Apply conventional cluster analysis techniques
@@ -172,36 +183,32 @@ Feature 4: Integrated analysis/summary (check with prof first)
 
 -   Exploratory Data Analysis
 
-```{=html}
 <!-- -->
-```
+
 -   Visualize and examine the distribution of attribute data
 
 -   Discover potential anomalies, outliers, or trends
 
 -   Come up with hypotheses to narrow our focus in further data analyses
 
-```{=html}
 <!-- -->
-```
+
 -   Kernel Density Estimation
 
     -   Visualize and examine the distribution of attribute data (facilities and amenities) across Singapore
 
 -   Analytical Regionalisation and Geographical Segmentation
 
-```{=html}
 <!-- -->
-```
+
 -   Employ concepts of geographic segmentation
 
 -   Apply conventional cluster analysis techniques
 
 -   Delineate homogeneous region by using geographically referenced multivariate data
 
-```{=html}
 <!-- -->
-```
+
 -   Integrated analysis/summary
 
     -   Combining KDE and analytical regionalisation

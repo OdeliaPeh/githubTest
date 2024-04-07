@@ -1,0 +1,147 @@
+---
+title: "Project Overview"
+execute:
+  warning: false
+date: "7 Apr, 2024"
+---
+
+# ELDANALYZE: Project Overview
+
+# 1 The Issue: Singapore's Ageing Population
+
+Ageing Population:
+
+Singapore's population of 65 and older has been by 11.7% over the past decade. This trend is expected to persist with longer lifespans and a large proportion of the population falling within the age range.
+
+Governmental Action:
+
+To address this, the government is building more polyclinics and eldercare centres, diversifying their capabilities, and removing physical barriers to entry. It is also pushing for active ageing, encouraging elderly individuals to engage in social and physical activities to maintain a healthy lifestyle and mindset.
+
+Our Aim:
+
+Through our project, we hope to provide insights about the geographical distribution, accessibility and segmentation of eldercare centres in Singapore. With better understanding of the connection between Singapore's elderly and the existing relevant facilities, the authorities could potentially be better informed when planning and making decisions for the urban landscape, rolling out plans that better support the elderly in Singapore.
+
+# 2 Our Motivation
+
+Singapore has experienced a demographic shift, with the proportion of the citizens aged 65 and older increasing by 11.7% from 10 years ago. ([Source](https://www.cnbc.com/2023/10/30/as-singapores-aging-population-grows-businesses-court-older-spenders.html)) Such a shift comes with a higher prevalence of chronic illness and disabilities. To address this, the Singaporean government has committed to building more polyclinics ([Source](https://www.pap.org.sg/news/ensuring-quality-healthcare-remains-accessible-and-affordable/)) and eldercare centres ([Source](https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086)). Furthermore, they intend to diversify eldercare centres’ capabilities to also encompass basic health check-ups ([Source](https://www.todayonline.com/singapore/singapore-aims-double-number-eldercare-centres-2025-and-expand-their-services-1924086)) and they are working towards removing physical barriers to entry in current polyclinics. These measures are to ensure that healthcare remains physically accessible to any elderly person who needs it. This is especially important since geographical accessibility has been identified as one of the biggest contributing factors to polyclinic visitations ([Source](http://www.smj.org.sg/sites/default/files/5302/5302a7.pdf)).
+
+Furthermore, the government has been pushing for active ageing, where the elderly persons still engage in social and physical activity to maintain their health and well-being ([Source](https://www.healthhub.sg/live-healthy/embracing-the-golden-age)). To this end, the Singaporean government has been trying to increase the number of active ageing centres ([Source](https://www.straitstimes.com/singapore/politics/ndr-2023-active-ageing-centres-to-be-expanded-to-help-seniors-stay-active-and-healthy)) to make it more accessible to seniors.
+
+As such, our project aims to gain a deeper understanding of the geographical distribution of eldercare centres throughout Singapore. Currently, there have been studies conducted to understand the geographical accessibility of the polyclinics, as well as identify any potentially underserved regions. One study conducted in 2012 suggested that Sembawang and Jurong West were two underserved regions. ([Source](https://search.library.smu.edu.sg/permalink/65SMU_INST/1ba19kd/cdi_openaire_primary_doi_dedup_0a81367451c0764f9c94de2416016ce7)). With the rising elderly population, we must ensure that there are sufficient facilities to meet the growing demand in each region. A more recent study conducted in 2018 suggests that eldercare specifically is sparse in the Central Region. ([Source](https://scholarbank.nus.edu.sg/handle/10635/223231))
+
+Currently, there are studies to understand the geographical accessibility of the polyclinics, and identify any potentially underserved regions. Nonetheless, applications that help users derive a quick and comprehensive analysis of these facilities are not widely available.
+
+With the rising elderly population, we must ensure that there are sufficient facilities to meet the growing demand in each region. A more recent study conducted in 2018 suggests that eldercare is sparse in the Central Region. We hope our app would be helpful towards planning to better support our beloved older generations.
+
+# 3 The Data
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Data                                                                                                                                                                                                         | Usage                                                                                                                                            |
++==============================================================================================================================================================================================================+==================================================================================================================================================+
+| [Singapore Residents by Planning Area / Subzone, Age Group, Sex and Type of Dwelling, June 2023](https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesextod2023.ashx) | -   Source: Department of Statistics, Singapore                                                                                                  |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: Attribute data containing the number of Singapore residents by planning area, subzone, age group, sex and type of dwelling, in 2023 |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Master Plan 2019 Subzone Boundary (No Sea)](https://beta.data.gov.sg/collections/1749/view)                                                                                                                 | -   Source: Urban Redevelopment Authority (URA)                                                                                                  |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: Geospatial data containing Singapore subzones, planning areas, and regions                                                          |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Eldercare Services](https://beta.data.gov.sg/collections/714/datasets/d_3545b068e3f3506c56b2cb6b6117b884/view)                                                                                              | -   Source: Ministry of Health, Singapore                                                                                                        |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: Geospatial and attribute data containing the records of eldercare services in Singapore as of February 29, 2024                     |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Point Data                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Pois Data Set ](https://download.geofabrik.de/)                                                                                                                                                             | -   Source: OpenStreetMap of Geofabrik server                                                                                                    |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: Facilties in Malaysia, Singapore and Brunei (e.g. parks, community centres, hospital)                                               |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Community in Bloom](https://beta.data.gov.sg/collections/1479/view) (CIB)                                                                                                                                   | -   Source: National Parks Board, Singapore                                                                                                      |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: Community gardens in Singapore                                                                                                      |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Point Data                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [CHAS clinics](https://beta.data.gov.sg/collections/2036/view)                                                                                                                                               | -   Source: Ministry of Health, Singapore                                                                                                        |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: CHAS clinics in Singapore                                                                                                           |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Point Data                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| [HDB Buildings](https://beta.data.gov.sg/datasets/d_60a6c3d88483cf63d2063c93771a6aeb/view)                                                                                                                   | -   Source: Housing and Development Board Singapore                                                                                              |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Content: HDB buildings in Singapore                                                                                                          |
+|                                                                                                                                                                                                              |                                                                                                                                                  |
+|                                                                                                                                                                                                              | -   Type: Polygon Data                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+# 4 Approaches
+
+For this project, we would like to facilitate the achievement of the following objectives to analyze the facilities for the elderly in Singapore:
+
+## Approach 1: Spatial Points Pattern Analysis –  Kernel Density Estimation
+
+To estimate the probability density function of a continuous random variable over a geographic area by placing a kernel function on each data point and summing up their contributions. This helps us visualise spatial patterns of data points.
+
+![](images/kdeplot.png)
+
+### Assumptions
+
+1.  **Randomness**
+
+    -   In our spatial points pattern analysis, we assumed that the distribution of the various amenities is random and is not significantly constrained by networks such as roads and rivers. Given that the networks do not constrain persons from accessing the other amenities, we found that this assumption is justifiable.
+
+2.  **Constant Density**
+
+    -   In our analysis, we also assumed that there are no significant disparities in the density of amenities in a given space. This was not necessarily true as there were regions with 0 amenities and others with a significant number. This assumption was made due to two reasons: constraints with regard to the Shiny app’s deployment and the unofficial nature of our data.
+
+## Approach 2: Accessibility Analysis
+
+To assess the ease of reaching destinations from a given location, often using measures like travel time or distance, aiding urban planning and decision-making by identifying areas with varying levels of accessibility.
+
+![](images/acplot.png)
+
+### Assumptions
+
+1.  Demand of services:
+    -   In our analysis, we assumed that the spread of demand of services is determined by the spread of the elderly population across Singapore. However, we do not have access to data of the actual residences of each elderly to determine an accurate spread. Hence, we applied the following steps:
+        1.  Determine the number of elderly in each subzone using the population data from the **Singapore Residents by Planning Area / Subzone, Age Group, Sex and Type of Dwelling, June 2023** data set
+
+        2.  Find the number of HDB in each hexagon and subzone, based on **HDB Buildings** data set
+
+        3.  Find the number of elderly in each hexagon using the number of HDB in each hexagon relative to the number of HDB in the entire subzone, that is:
+
+            -   Number of elderly in each hexagon = Number of HDB in the hexagon/Number of HDB in the subzone \* Number of elderly in the subzone
+2.  Capacity of Services - As we were unable to derive the exact capacity of each facility due to limited data on the internet, we assumed that the spread of supply of services (capacity at any point in time) based on the following features:
+    -   Eldercare Centres: Based on an article
+    -   Other facilities: Estimation based on the average size of these facilities 
+
+With access to more comprehensive data, we would be able to give a more accurate picture of the accessibility to the facilities in Singapore .
+
+## Approach 3: Geographical Segmentation
+
+To divide our elderly population based on physical location, such as region, planning area, or subzone, allowing the government to tailor strategies to specific geographic areas.
+
+# 4 Future Work
+
+## 4.1 Spatial Points Pattern Analysis – Kernel Density Estimation:
+
+**Networks:** Our work can be expanded to analyse the distribution of all the amenities with respect to the network to assess the accessibility of a given amenity from other amenities (e.g. if the eldercare centre is near a park) While we made the assumption that the network would not substantially affect the results, it would nonetheless be helpful to understand the impact of physical constraints on the accessibility of the various amenities.
+
+## 4.2 Accessibility Analysis:
+
+**Inclination of Slopes:** Our work can be further extended to assess the accessibility of different amenities while considering the **inclination of slopes** as staircases/slopes might pose a challenge for the elderly.
+
+**Interactive Plot:** In addition, it would be better if we could produce an interactive plot for the analysis. This would allow users to easily identify areas that they are interested in by hovering over the area. However, due to the complexity of such plots, it significantly lengthens the loading time of the app. Hence, taking into consideration costs and benefits, we decided that using a static plot that is more appropriate at this juncture. With more resources in the future, it would be good if we could implement the interactive plot.
+
+**Availability of Data:** As mentioned earlier, we made a few assumptions about the demand and capacity of the facilities. Thought they are arguably good estimates, they might not provide the most accurate representation of reality. Hence, we can improve in the future if we are given access to such comprehensive data.
+
+## 4.3 Geographical Segmentation:
+
+We can complete the **visualisation** of the geographical segmentation of the various eldercare facilities across Singapore based on the various accessibility scores. We can also consider the **number of facilities** as a possible variable.
