@@ -1,5 +1,5 @@
 ---
-title: "Project Overview"
+title: "User Guide"
 execute:
   warning: false
 date: "7 Apr, 2024"
@@ -9,7 +9,7 @@ date: "7 Apr, 2024"
 
 This tab allows for the user to see the kernel density estimation of the various amenities throughout Singapore, both nationally and per planning zone.
 
-![](images/shinykde.png){fig-align="center"}
+![](images/shinykde_2.png){fig-align="center"}
 
 On the left, there is the sidebar to navigate through the different available options.
 
@@ -17,13 +17,17 @@ On the left, there is the sidebar to navigate through the different available op
 
 1.  Select which level you want to view. (Country-wide or Planning Area-specific)
 
-    1.  If Planning Area-specific is selected, select the planning area name
+    1.  If Planning Area-specific is selected, click on "Submit changes" and subsequently select the planning area name
 
 2.  Select the amenity of interest
 
 3.  Select which kernel type you want to view
 
-A new map will be generated for each selection made.
+4.  Select the type of bandwidth you want
+
+    1.  If you select "Fixed", choose the exact bandwidth you'd like from the slider
+
+A new map will be generated for each submission made.
 
 **Interpretation:** 
 
@@ -63,18 +67,16 @@ In general, higher accessibility index values reflect better accessibility, whil
 
     -   Suggest that the area is well-connected and easily accessible, with ample resources or services available within a reasonable travel distance or time.
 
-```{=html}
 <!-- -->
-```
+
 -   Lower Values:
 
     -   Fewer opportunities reachable within the specified distance or time from the origin.
 
     -   Area is more remote or poorly connected, with limited access to the facilities within the given travel constraints.
 
-```{=html}
 <!-- -->
-```
+
 -   Spatial Patterns:
 
     -   Clusters of high or low accessibility index values may highlight areas of particular concern or areas where interventions are needed to improve access.

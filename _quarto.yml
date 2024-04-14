@@ -9,8 +9,10 @@ website:
         text: "Project Overview"
       - href: "ShinyApp/UserGuide.html"
         text: "User Guide"
+      - href: "images/poster.html"
+        text: "Poster"
     right:
-      - href: "ShinyApp/UserGuide.html"
+      - href: "https://hellogis.shinyapps.io/eldanalyze/"
         text: "ShinyApp"
       
      

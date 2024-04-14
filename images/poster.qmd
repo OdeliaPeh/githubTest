@@ -1,0 +1,10 @@
+---
+title: "Project Overview"
+execute:
+  warning: false
+date: "7 Apr, 2024"
+---
+
+# Townhall Poster
+
+![Poster Displayed for Townhall](Group 4 New Submission.jpg){fig-align="center"}
