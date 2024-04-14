@@ -9,7 +9,7 @@ date: "7 Apr, 2024"
 
 This tab allows for the user to see the kernel density estimation of the various amenities throughout Singapore, both nationally and per planning zone.
 
-![](images/shinykde_2.png){fig-align="center"}
+![](images/clipboard-4105329023.png){fig-align="center" width="2880"}
 
 On the left, there is the sidebar to navigate through the different available options.
 

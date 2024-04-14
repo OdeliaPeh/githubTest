@@ -1,5 +1,5 @@
 ---
-title: "Project Overview"
+title: "Poster"
 execute:
   warning: false
 date: "7 Apr, 2024"
@@ -7,4 +7,4 @@ date: "7 Apr, 2024"
 
 # Townhall Poster
 
-![Poster Displayed for Townhall](Group 4 New Submission.jpg){fig-align="center"}
+![Poster Displayed for Townhall](Group%204%20New%20Submission.jpg){fig-align="center"}
